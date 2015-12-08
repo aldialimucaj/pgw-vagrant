@@ -4,9 +4,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
  
   config.vm.box = "alimucaj/playground"
 
-  config.push.define "atlas" do |push|
-    push.app = "alimucaj/playground"
-  end
+  # config.push.define "atlas" do |push|
+  #   push.app = "alimucaj/playground"
+  # end
   
   config.vm.hostname = hostname = "playground"
   config.vm.network "public_network"
